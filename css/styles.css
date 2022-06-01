@@ -14,7 +14,15 @@ body {
     font-size: 14px;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -75,11 +83,14 @@ body {
     color: var(--accent-color);
 }
 
-/* Hero */
-
 .hero,
 .footer {
     background-color: #2F303A;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
 }
 
 .hero-title {
@@ -87,9 +98,11 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin: 0 auto 30px;
+    padding-top: 200px;
+    width: 696px;
 }
 
 .hero-button {
@@ -99,6 +112,9 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    margin: 0 auto 200px;
+    padding: 10px 32px;
+    min-width: 200px;
 }
 
 .title {
@@ -160,7 +176,7 @@ body {
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.62;
-    }
+}
 
 .button:hover,
 .button:focus {
