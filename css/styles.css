@@ -122,7 +122,6 @@ body {
 
 .hero-button {
     background-color: var(--accent-color);
-    border-radius: 4px;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -222,15 +221,19 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-.portfolio-section > .container {
-    background-color: #EEEEEE;
+.button-list {
+    margin-bottom: 50px;
+    text-align: center;
 }
 
-.potfolio-button {
+.portfolio-button {
     background-color: var(--secondary-bg-color);
+    border-color: transparent;
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.62;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .button:hover,
@@ -239,10 +242,21 @@ body {
     color: #FFFFFF;
 }
 
+.portfolio-list li {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-image {
+    margin-bottom: 20px;
+}
+
 .portfolio-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .portfolio-category {
@@ -250,8 +264,15 @@ body {
     line-height: 1.88;
     text-decoration: none;
     color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
+.portfolio-title,
+.portfolio-category {
+    text-align: left;
+    margin-left: 24px;
+}
 /*цвет заголовков #212121*/
 /*цвет текста, телефон и адрес #757575*/
 /*акцент #2196F3*/
