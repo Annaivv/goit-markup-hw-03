@@ -49,6 +49,11 @@ body {
 }
 
 /* Header */
+.header > .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .logo {
     color: #000000;
     font-family: Raleway, sans-serif;
