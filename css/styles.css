@@ -14,10 +14,20 @@ body {
     font-size: 14px;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section:nth-child(3) {
+    padding-top: 0;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    padding: 0 15px;
 }
 
 .list {
@@ -126,6 +136,8 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 /* Features */
@@ -142,6 +154,7 @@ body {
 /* Team */
 .team {
     background-color: var(--secondary-bg-color);
+    text-align: center;
 }
 
 .team-list li {
@@ -171,6 +184,15 @@ body {
 }
 
 /* Portfolio */
+
+.portfolio-section {
+    background-color: var(--primary-bg-color);
+}
+
+.portfolio-section > .container {
+    background-color: #EEEEEE;
+}
+
 .potfolio-button {
     background-color: var(--secondary-bg-color);
     color: var(--title-text-color);
