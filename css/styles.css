@@ -4,6 +4,7 @@
     --accent-color: #2196F3;
     --primary-bg-color: #E5E5E5;
     --secondary-bg-color: #F5F4FA;
+    --typical-margin: 30px;
 }
 
 /* Styles reset */
@@ -89,6 +90,11 @@ body {
 }
 
 /* Header */
+.header {
+    border-bottom: 1px solid #ECECEC;
+    bor
+}
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -213,6 +219,18 @@ body {
 }
 
 /* Features */
+.features-list {
+    display: flex;
+}
+
+.features-list .item {
+    width: calc((100% - 90px) / 4);
+}
+
+.features-list .item:not(:last-child) {
+    margin-right: var(--typical-margin);
+}
+
 .features-list .title {
     margin-bottom: 10px;
 
@@ -225,16 +243,36 @@ body {
     line-height: 1.71;
 }
 
+/* What we do */
+.examples-list {
+    display: flex;
+}
+
+.examples-list .item {
+    width: calc((100% - 60px) / 3);
+}
+
+.examples-list .item:not(:last-child) {
+    margin-right: var(--typical-margin);
+}
+
 /* Team */
 .team {
     background-color: var(--secondary-bg-color);
     text-align: center;
 }
 
-.team-list li {
-    width: 270px;
+.team-list {
+    display: flex;
+}
 
+.team-list .item {
+    width: calc((100% - 90px) / 4);
     background-color: #FFFFFF;
+}
+
+.team-list .item:not(:last-child) {
+    margin-right: var(--typical-margin);
 }
 
 .team-list div {
@@ -291,9 +329,15 @@ body {
 }
 
 .button-list {
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
     
     text-align: center;
+}
+
+.button-list .item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .portfolio-button {
@@ -313,15 +357,28 @@ body {
     color: #FFFFFF;
 }
 
-.portfolio-list li {
-    border: 1px solid #EEEEEE;
-    width: 372px;
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-list .item {
+    width: calc((100% - 60px) / 3);
 
     background: #FFFFFF;
 }
 
+.portfolio-list .item:not(:nth-child(3n)) {
+    margin-right: var(--typical-margin);
+}
+
+.portfolio-list .item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: var(--typical-margin);
+}
+
 .portfolio-list div {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio-title {
