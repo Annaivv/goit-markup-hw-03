@@ -276,7 +276,8 @@ body {
 }
 
 .team-list div {
-    padding: 30px 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-list .title {
@@ -289,7 +290,7 @@ body {
 
 /* Footer */
 
-.footer > .container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -324,10 +325,6 @@ body {
 
 /* Portfolio */
 
-.portfolio-section {
-    background-color: var(--primary-bg-color);
-}
-
 .button-list {
     display: flex;
     justify-content: center;
@@ -341,9 +338,8 @@ body {
 }
 
 .portfolio-button {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    
+    padding: 6px 22px;
+        
     background-color: var(--secondary-bg-color);
     border-color: transparent;
     color: var(--title-text-color);
